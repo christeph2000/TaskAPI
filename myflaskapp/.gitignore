@@ -1,5 +1,5 @@
 # .gitignore
-
+#super
 .env
 
 # Exclude virtual environment
