@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assessment</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        padding: 20px;
+        background-color: #f5f5f5;
+      }
+
+      h1 {
+        color: #333;
+      }
+
+      ul {
+        list-style-type: none;
+        padding: 0;
+      }
+
+      li {
+        background-color: #fff;
+        border: 1px solid #ddd;
+        margin-bottom: 10px;
+        padding: 15px;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Tasks</h1>
+
+    <ul>
+      {% for user in tasks %}
+      <li>
+        <strong>Task ID:</strong> {{ user.task_ID }}<br />
+        <strong>Task Name:</strong> {{ user.task_name }}
+      </li>
+      {% endfor %}
+    </ul>
+
+    <a class="button" href="/">Home</a>
+  </body>
+</html>

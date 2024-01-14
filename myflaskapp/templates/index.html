@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task API</title>
+    <style>
+      body {
+        font-family: "Arial", sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+      }
+
+      .container {
+        text-align: center;
+      }
+
+      h1 {
+        color: #333;
+      }
+
+      .buttons-container {
+        margin-top: 20px;
+      }
+
+      .button {
+        display: inline-block;
+        margin: 10px;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        text-decoration: none;
+        color: #fff;
+        background-color: #3498db;
+        border-radius: 4px;
+        transition: background-color 0.3s;
+      }
+
+      .button:hover {
+        background-color: #2980b9;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Task API</h1>
+
+      <div class="buttons-container">
+        <a class="button" href="/tasks">Show</a>
+        <a class="button" href="/create">Create</a>
+        <a class="button" href="/delete">Delete</a>
+        <a class="button" href="/edit">Edit</a>
+        <a class="button" href="/search">Search By Id</a>
+      </div>
+    </div>
+  </body>
+</html>
